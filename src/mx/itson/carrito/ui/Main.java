@@ -5,6 +5,7 @@ package mx.itson.carrito.ui;
 
 import java.util.Scanner;
 import mx.itson.carrito.entidades.Carro;
+import mx.itson.carrito.enums.TipoMotor;
 
 
 public class Main 
@@ -27,6 +28,7 @@ public class Main
         tsuru.setColor("Rojo");
         tsuru.setAnio(2008);
         tsuru.setKilometraje(10000);
+        tsuru.setTipoMotor(TipoMotor.COMBUSTIÓN);
         
         // Invocamos al metodo contenido en la clase Carro
         double tiempo = tsuru.calcularTiempo(distancia, velocidad);

@@ -10,6 +10,34 @@ public class Carro
 {
 
     /**
+     * @return the sonido
+     */
+    public Sonido getSonido() {
+        return sonido;
+    }
+
+    /**
+     * @param sonido the sonido to set
+     */
+    public void setSonido(Sonido sonido) {
+        this.sonido = sonido;
+    }
+
+    /**
+     * @return the propietario
+     */
+    public Propietario getPropietario() {
+        return propietario;
+    }
+
+    /**
+     * @param propietario the propietario to set
+     */
+    public void setPropietario(Propietario propietario) {
+        this.propietario = propietario;
+    }
+
+    /**
      * @return the tipoTransmision
      */
     public TipoTransmision getTipoTransmision() {
@@ -99,6 +127,8 @@ public class Carro
     private double kilometraje;
     private TipoMotor tipoMotor;
     private TipoTransmision tipoTransmision;
+    private Propietario propietario;
+    private Sonido sonido;
     
     /**
      * Calcula el tiempo que tarda el carro en recorrer una distancia.
